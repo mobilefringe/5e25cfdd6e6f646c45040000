@@ -59,7 +59,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "json!site.json"], function(Vue, Vuex, moment, tz, VueMoment, site) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "json!site.json"], function(Vue, Vuex, moment, tz, VueMoment, siteInfo) {
         return Vue.component("jobs-component", {
             template: template, // the variable template will be injected
             props:['locale'],
@@ -67,7 +67,6 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    siteInfo: site
                 }
             },
             created() {
