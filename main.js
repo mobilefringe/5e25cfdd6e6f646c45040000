@@ -50,7 +50,7 @@ require.config({
     }
 });
 
-require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue-breadcrumbs', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', 'vue!breadcrumb.vue', 'vue!loader.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, VueBreadcrumbs, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, BreadcrumbComponent, Loader) {
+require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue-breadcrumbs', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', 'vue!breadcrumb.vue', 'vue!loader.vue', 'json!site.json'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, VueBreadcrumbs, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, BreadcrumbComponent, Loader, site) {
     
     
     Vue.use(Meta, {
