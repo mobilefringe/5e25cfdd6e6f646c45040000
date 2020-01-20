@@ -113,7 +113,7 @@
                             }
                         } else {
                             if (_.includes(this.currentEvent.event_image_url_abs, 'missing')) {
-                                this.currentEvent.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1529532187000/eventsplaceholder2@2x.png";    
+                                this.currentEvent.image_url = siteInfo.placeholderImage;    
                             }
                         }
                     }
