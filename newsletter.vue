@@ -91,7 +91,7 @@
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": siteInfo.insideBanner
+                            "image_url": this.siteInfo.insideBanner
                         }
                     }
                     
@@ -109,7 +109,7 @@
                 loadData: async function () {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     try {
-                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/" + siteInfo.subdomain + "-newsletter.json"}), this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/" + this.siteInfo.subdomain + "-newsletter.json"}), this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
