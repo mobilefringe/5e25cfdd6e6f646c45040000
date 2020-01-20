@@ -108,7 +108,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg"], function (Vue, Vuex, meta, slick, moment, tz, VueMoment, welcomeMessage) {
+    define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg", "json!site.json"], function (Vue, Vuex, meta, slick, moment, tz, VueMoment, welcomeMessage, site) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -281,7 +281,7 @@
                             [this.$store.dispatch("getData", "banners"), 
                             this.$store.dispatch("getData","promotions"), 
                             this.$store.dispatch("getData", "events"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://costamesa.mallmaverick.com/api/v4/costamesa/social.json" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "https://" + site.subdomain + ".mallmaverick.com/api/v4/" + site.subdomain +"/social.json" })
                         ]);
                         return results;
                     } catch(e) {
