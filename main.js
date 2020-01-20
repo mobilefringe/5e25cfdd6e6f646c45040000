@@ -50,7 +50,7 @@ require.config({
     }
 });
 
-require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue-breadcrumbs', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', 'vue!breadcrumb.vue', 'vue!loader.vue', 'json!site.json'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, VueBreadcrumbs, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, BreadcrumbComponent, Loader, site) {
+require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-sync', 'datastore', 'vue-i18n', 'locales', 'moment', 'vue-meta', 'vue-breadcrumbs', 'vue!loading.vue', 'vue!messages.vue', 'vue!header.vue', 'vue!footer.vue', 'vue!inside_header.vue', 'vue!breadcrumb.vue', 'vue!loader.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, VuexRouterSync, store, VueI18n, messages, moment, Meta, VueBreadcrumbs, LoadingComponent, MessagesComponent, HeaderComponent, FooterComponent, insideHeaderComponent, BreadcrumbComponent, Loader) {
     
     
     Vue.use(Meta, {
@@ -148,12 +148,12 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                 social_media: [
                     {
                         name: "Facebook",
-                        url: site.facebookURL,
+                        url: "https://www.facebook.com/shopcostamesa",
                         iconClass: "fab fa-facebook"
                     },
                     {
                         name: "Instagram",
-                        url: site.instagramURL,
+                        url: "https://www.instagram.com/shopcostamesa",
                         iconClass: "fab fa-instagram"
                     }
                 ],
@@ -189,7 +189,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
         methods: {
             loadData: async function() {
                 try{
-                    await this.$store.dispatch('initializeApi', { site: site.domain, version: "v4" });
+                    await this.$store.dispatch('initializeApi', { site: "costamesa", version: "v4" });
                     await Promise.all([this.$store.dispatch("getData", "property")]);
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     let results = await Promise.all([
