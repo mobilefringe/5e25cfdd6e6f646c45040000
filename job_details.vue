@@ -94,7 +94,7 @@
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": siteInfo.insideBanner
+                            "image_url": this.siteInfo.insideBanner
                         }
                     }
 			    }, error => {
