@@ -73,13 +73,13 @@
         						     <div class="col-xs-12" :class="{'has-error': errors.has('agree_terms')}">
         						        <label class="checkbox">
                                             <input name="agree_terms" type="checkbox" v-model="form_data.terms" required>
-                                                I have read and agree to the <a class="primary" :href="/pages/" + Site.subdomain + "-rules-and-regulations" target="_blank">Contest Rules & Regulations</a>.
+                                                I have read and agree to the <a class="primary" :href=rulesURL target="_blank">Contest Rules & Regulations</a>.
                                         </label>
         						    </div>
         					    </div>
         					    <div class="form-inline row margin_30">
         						    <div class="col-xs-12">
-        						        <p>For more details about personal privacy, please read our <a class="primary" :href="/pages/" + Site.subdomain + "-privacy-policy" target="_blank">Privacy Policy</a>.</p>
+        						        <p>For more details about personal privacy, please read our <a class="primary" :href=privacyURL target="_blank">Privacy Policy</a>.</p>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -116,7 +116,9 @@
                     validaNum: '',
                     correctValNum: null,
                     validNumError: false,
-                    currentContest: null
+                    currentContest: null,
+                    rulesURL = "/pages/" + Site.subdomain + "-rules-and-regulations",
+                    privacyURL = "/pages/" + Site.subdomain + "-privacy-policy"
                 }
             },
             created() {
