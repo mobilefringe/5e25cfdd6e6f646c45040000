@@ -194,7 +194,16 @@
                 ]),
                 homeBanners() {
                     var banners = [];
-                    _.forEach(this.$store.state.banners, function (value, key) {
+                    var banner = {
+                        'name': 'Name',
+                        'heading': 'Heading',
+                        'description': "description",
+                        'image_url': '//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/jpeg/1579050050000/cmc_home_1920x470.jpg',
+                        'url': '//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/jpeg/1579050050000/cmc_home_1920x470.jpg'
+                    };
+                    //need changes
+                    //Removed since only one home banner was available
+                    /*_.forEach(this.$store.state.banners, function (value, key) {
                         var today = new Date();
                         var start = new Date (value.start_date);
                         if (start <= today){
@@ -212,7 +221,7 @@
                             }
                         }
                     });
-                    banners = _.orderBy(banners, function(o) { return o.position });
+                    banners = _.orderBy(banners, function(o) { return o.position });*/
                     return banners
                 },
                 featuredItems() {
