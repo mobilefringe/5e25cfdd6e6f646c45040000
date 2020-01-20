@@ -883,7 +883,7 @@ a {
 }
 .animated_btn:hover {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     &:before {
         -webkit-transform: scale3d(9, 9, 1);
         transform: scale3d(9, 9, 1);
