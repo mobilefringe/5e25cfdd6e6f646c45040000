@@ -148,12 +148,12 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                 social_media: [
                     {
                         name: "Facebook",
-                        url: "https://www.facebook.com/shopcostamesa",
+                        url: site.facebookURL,
                         iconClass: "fab fa-facebook"
                     },
                     {
                         name: "Instagram",
-                        url: "https://www.instagram.com/shopcostamesa",
+                        url: site.instagramURL,
                         iconClass: "fab fa-instagram"
                     }
                 ],
