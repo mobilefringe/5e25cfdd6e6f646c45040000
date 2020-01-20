@@ -69,7 +69,7 @@
                         this.pageBanner = repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": siteInfo.insideBanner
                         }
                     }
                     
