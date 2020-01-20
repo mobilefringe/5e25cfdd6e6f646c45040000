@@ -218,7 +218,7 @@
                         var current_event = vm.findEventById(value);
                         
                         if (_.includes(current_event.image_url, 'missing')) {
-                            current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/png/1579549281960/costa_mesa_placeholder_images.png";
+                            current_event.image_url = siteInfo.placeholderImage;
                         }
 
                         temp_event.push(current_event);
