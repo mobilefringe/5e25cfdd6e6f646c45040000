@@ -205,7 +205,7 @@
                         var current_promo = vm.findPromoById(value);
                         
                         if (_.includes(current_promo.image_url, 'missing')) {
-                            current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/png/1579549281960/costa_mesa_placeholder_images.png";
+                            current_promo.image_url = siteInfo.placeholderImage;
                         }
 
                         temp_promo.push(current_promo);
