@@ -14,11 +14,11 @@
                             <breadcrumb></breadcrumb>
                         </div>
                     </div>
-                    <div class="row" v-if="main.body.length">
+                    <!--<div class="row" v-if="main.body.length">
                         <div class="col-md-12">
                             <div class="margin_60" v-html="main.body"></div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row">
                         <div class="col-md-4">
                             <div v-if="contactInfo" class="margin_60 padding_60" v-html="contactInfo.body"></div>    
