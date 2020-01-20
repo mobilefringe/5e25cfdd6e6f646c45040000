@@ -103,7 +103,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-select", "vue!search-component", "masonry" , "vue-masonry-plugin"], function(Vue, Vuex, VueSelect, SearchComponent, masonry, VueMasonryPlugin) {
+    define(["Vue", "vuex", "vue-select", "vue!search-component", "masonry" , "vue-masonry-plugin", "json!site.json"], function(Vue, Vuex, VueSelect, SearchComponent, masonry, VueMasonryPlugin, Site) {
         Vue.component('v-select', VueSelect.VueSelect);
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("dine-component", {
@@ -188,7 +188,7 @@
                     _.forEach(this.processedStores, function(value, key) {
                         if(_.includes(value.categories, vm.dineFilter)) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1534781683000/costamesa_default.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1534781683000/"+ Site.subdomain + "_default.png";
                             }
                             store_list.push(value);
                         }
