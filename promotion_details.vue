@@ -83,7 +83,7 @@
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": siteInfo.insideBanner
+                            "image_url": this.siteInfo.insideBanner
                         }
                     }
 			    }, error => {
@@ -111,7 +111,7 @@
                             }
                         } else {
                             if  (_.includes(this.currentPromo.promo_image_url_abs, 'missing')) {
-                                this.currentPromo.image_url = siteInfo.placeholderImage;    
+                                this.currentPromo.image_url = this.siteInfo.placeholderImage;    
                             }
                         }
                     }
