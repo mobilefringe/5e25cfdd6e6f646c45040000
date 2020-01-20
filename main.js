@@ -122,9 +122,13 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         id: "menu2",
                         href: "#",
                         sub_menu: [
-                            {
+                            /*{
                                 name: "Center Information",
                                 href: "/center-information"
+                            },*/
+                            {
+                                name: "Services",
+                                href: "/pages/costamesa-services"
                             },
                             {
                                 name: "Contact Us",
@@ -134,10 +138,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                name: "Jobs",
                                href: "/jobs"
                             },
-                            {
+                            /*{
                                 name: "Pop-up Specialty Leasing",
                                 href: "/leasing"
-                            },
+                            },*/
                             {
                                 name: "Newsletter Sign Up",
                                 href: "/newsletter"
