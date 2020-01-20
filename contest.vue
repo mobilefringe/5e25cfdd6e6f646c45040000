@@ -102,7 +102,7 @@
     }
 </style>
 <script>
-    define(["Vue", "vuex", "jquery", "axios", "vee-validate"], function(Vue, Vuex, $, axios, VeeValidate) {
+    define(["Vue", "vuex", "jquery", "axios", "vee-validate", "json!site.json"], function(Vue, Vuex, $, axios, VeeValidate, Site) {
         Vue.use(VeeValidate);
         return Vue.component("contest-component", {
             template: template, // the variable template will be injected
@@ -134,7 +134,7 @@
                 }); 
                 
                 this.$store.dispatch("getData", "contests").then(response => {
-                    this.currentContest = this.findContestByShowOnSlug('costamesa-contest');
+                    this.currentContest = this.findContestByShowOnSlug(Site.subdomain + '-contest');
                     if (this.currentContest) {
                         this.dataLoaded = true;
                     } else {
