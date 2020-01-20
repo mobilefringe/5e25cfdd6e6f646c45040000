@@ -84,7 +84,7 @@
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": siteInfo.insideBanner
+                            "image_url": this.siteInfo.insideBanner
                         }
                     }
 			    }, error => {
@@ -113,7 +113,7 @@
                             }
                         } else {
                             if (_.includes(this.currentEvent.event_image_url_abs, 'missing')) {
-                                this.currentEvent.image_url = siteInfo.placeholderImage;    
+                                this.currentEvent.image_url = this.siteInfo.placeholderImage;    
                             }
                         }
                     }
