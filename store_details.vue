@@ -205,7 +205,7 @@
                         var current_promo = vm.findPromoById(value);
                         
                         if (_.includes(current_promo.image_url, 'missing')) {
-                            current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1529532181000/promoplaceholder2@2x.png";
+                            current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/png/1579549281960/costa_mesa_placeholder_images.png";
                         }
 
                         temp_promo.push(current_promo);
@@ -218,7 +218,7 @@
                         var current_event = vm.findEventById(value);
                         
                         if (_.includes(current_event.image_url, 'missing')) {
-                            current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                            current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/png/1579549281960/costa_mesa_placeholder_images.png";
                         }
 
                         temp_event.push(current_event);
