@@ -103,7 +103,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-select", "vue!search-component", "masonry" , "vue-masonry-plugin", "json!site.json"], function(Vue, Vuex, VueSelect, SearchComponent, masonry, VueMasonryPlugin, Site) {
+    define(["Vue", "vuex", "vue-select", "vue!search-component", "masonry" , "vue-masonry-plugin", "json!site.json"], function(Vue, Vuex, VueSelect, SearchComponent, masonry, VueMasonryPlugin, siteInfo) {
         Vue.component('v-select', VueSelect.VueSelect);
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("dine-component", {
@@ -130,7 +130,7 @@
                         this.pageBanner = temp_repo[0];
                     } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": siteInfo.insideBanner
                         }
                     }
 
@@ -188,7 +188,7 @@
                     _.forEach(this.processedStores, function(value, key) {
                         if(_.includes(value.categories, vm.dineFilter)) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1534781683000/"+ Site.subdomain + "_default.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5de7dca36e6f6435b2020000/image/png/1534781683000/"+ siteInfo.subdomain + "_default.png";
                             }
                             store_list.push(value);
                         }
