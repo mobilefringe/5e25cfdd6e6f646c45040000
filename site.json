@@ -7,5 +7,5 @@
     "siteName": "Costa Mesa Courtyard",
     "subdomain": "costamesa",
     "privacyURL": "/pages/costamesa-privacy-policy",
-    "rulesURL": "/pages/" + subdomain + "-rules-and-regulations"
+    "rulesURL": "/pages/costamesa-rules-and-regulations"
 }
