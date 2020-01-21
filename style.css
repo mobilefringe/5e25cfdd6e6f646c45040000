@@ -361,7 +361,7 @@ a {
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
-    &:focus > .show_sub_menu,
+    .show_sub_menu,
     .subdropdown:hover,
     .subdropdown.focus {
         display: block;
