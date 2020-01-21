@@ -30,8 +30,8 @@
                         <nav id="primary_nav" role="navigation" aria-label="Main">
     						<ul>
     						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
-    						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
-    						        <div tabindex=0 v-if="item.sub_menu != undefined">{{ item.name }}</div>
+    						        <router-link tabindex=0 v-if="item.sub_menu == undefined" :to="item.href">{{ item.name }}</router-link>
+    						        <span  v-if="item.sub_menu != undefined">{{ item.name }}</span>
     						        <ul v-if="item.sub_menu" class="subdropdown">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
     						                <router-link :to="sub_menu.href">
