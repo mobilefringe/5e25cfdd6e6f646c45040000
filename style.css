@@ -361,16 +361,12 @@ a {
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
+    &:focus > .show_sub_menu,
     .subdropdown:hover,
     .subdropdown.focus {
         display: block;
 	    z-index: 99;
     }
-}
-
-.show_sub_menu {
-    display: block !important; 
-    z-index: 99;
 }
 
 //for non-IE to allow tabable display on dropdown menu
