@@ -369,10 +369,10 @@ a {
 }
 
 //for non-IE to allow tabable display on dropdown menu
-/*#primary_nav ul .menu_item:focus-within > .subdropdown {
+#primary_nav ul .menu_item:focus-within > .subdropdown {
     display: block;
 	z-index: 99;
-}*/
+}
 
 
 
