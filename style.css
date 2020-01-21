@@ -368,7 +368,7 @@ a {
     }
 }
 
-.show-sub-menu {
+.show_sub_menu {
     display: block !important; 
     z-index: 99;
 }
