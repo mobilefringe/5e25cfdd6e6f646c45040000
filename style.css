@@ -360,7 +360,9 @@ a {
 }
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
-    .subdropdown:hover {
+    &:focus > .subdropdown,
+    .subdropdown:hover,
+    .subdropdown.focus {
         display: block;
 	    z-index: 99;
     }
