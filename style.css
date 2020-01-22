@@ -358,6 +358,9 @@ a {
         }
     }
 }
+#primary_nav li a:focus + ul{
+    display:block;
+}
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
