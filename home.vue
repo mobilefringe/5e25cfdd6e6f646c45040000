@@ -195,8 +195,6 @@
                 homeBanners() {
                     var banners = [];
                     var banner = {
-                        'name': 'Name',
-                        'description': "description",
                         'image_url': '//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/jpeg/1579050050000/cmc_home_1920x470.jpg',
                         'url': '//codecloud.cdn.speedyrails.net/sites/5e25cfdd6e6f646c45040000/image/jpeg/1579050050000/cmc_home_1920x470.jpg'
                     };
