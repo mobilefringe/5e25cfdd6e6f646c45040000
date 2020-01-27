@@ -360,7 +360,7 @@ a {
     }
 }
 
-focus {
+:focus {
     outline: thin dotted;
 }
 #primary_nav li a:focus + ul{
