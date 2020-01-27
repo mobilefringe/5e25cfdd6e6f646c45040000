@@ -2093,7 +2093,8 @@ input[type=search] {
             box-shadow: none;
         }
         .accordion_body {
-            background: #2c8787;
+            //background: #2c8787;
+            background: $secondary;
         }
         .card-text {
             margin: 0;
