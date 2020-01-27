@@ -120,7 +120,7 @@
                     toggleText: "Display as List",
                     logoView: true,
                     listView: false,
-                    dineFilter: 6251
+                    dineFilter: siteInfo.diningCatVal
                 }
             },
             created (){
