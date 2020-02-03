@@ -16,9 +16,11 @@
 }
 
 /* *** COLOURS *** */
-$primary: #7b5636;
-$secondary: #607e3e; //green
-//$secondary: #f2e9cb; //beige
+//$primary: #7b5636; //brown
+$primary: #607e3e;
+//$secondary: #607e3e; //green
+
+$secondary: #f2e9cb; //beige
 $text: #000;
 
 
