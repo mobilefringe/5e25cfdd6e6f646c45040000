@@ -541,8 +541,7 @@ a {
         position: absolute;
         top: 0;
         right: 0;
-        //background-color: rgba(245, 128, 38, .8);
-        background-color: $secondary;
+        background-color: rgba(245, 128, 38, .8);
         .banner_content {
             min-width: 500px;
             position: absolute;
