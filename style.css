@@ -397,6 +397,7 @@ a {
         text-transform: uppercase;
         span {
             font-family: 'Roboto Condensed', sans-serif;
+            color: $text;
         }
         #userName, #emailAddress {
             margin-left: 10px;
