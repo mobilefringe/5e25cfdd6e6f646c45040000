@@ -387,7 +387,7 @@ a {
 /* *** FOOTER *** */
 #footer {
     background-color: #555;
-    color: #FFF;
+    color: $text;
     .newsletter_signup {
         padding: 28px 0 32px 0;
         background-color: $primary;
@@ -864,7 +864,7 @@ a {
     background: $primary;
     font-size: 0.875rem;
     line-height: normal;
-    color: #000;
+    color: $text;
     text-align: center;
     text-transform: uppercase;
     &:before {
@@ -890,7 +890,7 @@ a {
 }
 .animated_btn:hover {
     text-decoration: none;
-    color: #000;
+    color: $text;
     &:before {
         -webkit-transform: scale3d(9, 9, 1);
         transform: scale3d(9, 9, 1);
@@ -899,7 +899,7 @@ a {
 .change_color {
     background-color: $secondary;
     font-weight: 700;
-    color: #fff;
+    color: $text;
 }
 .list-item {
     display: inline-block;
@@ -940,7 +940,7 @@ $anim-speed: 0.3s;
 		opacity: 0;
 		z-index: 2;
 		background: $secondary;
-        color: #000;
+        color: $text;
         transition-property: top, opacity;
 		transition-duration: $anim-speed;
 		span {
@@ -963,7 +963,7 @@ $anim-speed: 0.3s;
 			p {
 			    margin-bottom: 8px;
 			    font-weight: bold;
-			    color: #000;
+			    color: $text;
 			}
 			.fa {
 			    font-size: 0.75rem;
@@ -1142,7 +1142,7 @@ $anim-speed: 0.3s;
             border-radius: 50%;
             font-size: 1rem;
             line-height: normal;
-            color: #FFF; 
+            color: $text; 
             &:hover {
                 cursor: pointer;
             }
@@ -1169,7 +1169,7 @@ $anim-speed: 0.3s;
             margin-bottom: 30px;
             font-size: 0.875rem;
             line-height: normal;
-            color: #000;    
+            color: $text;    
         }
     }
 }
@@ -1222,7 +1222,7 @@ $anim-speed: 0.3s;
     margin-bottom: 0;
     //font-size: 0.8rem;
     //line-height: 1.5rem;
-    color: #000;
+    color: $text;
     img {
         max-width: 100%;
     }
@@ -1287,7 +1287,7 @@ $anim-speed: 0.3s;
         line-height: normal;
         text-transform: uppercase;
         text-align: center;
-        color: #FFF;
+        color: $text;
     }
 }
 
@@ -1434,7 +1434,7 @@ $anim-speed: 0.3s;
         &:hover {
             cursor: pointer;
             background-color: $primary;
-            color: #FFF;
+            color: $text;
         }
     }
 }
@@ -1680,7 +1680,7 @@ input[type=search] {
     position: relative;
     transition: all 0.3s ease;
     border: 1px solid #e7e7e7;
-    color: #000;
+    color: $text;
     text-align: center;
     vertical-align: middle;
     .store_img, .store_no_hover_img {
@@ -1717,7 +1717,7 @@ input[type=search] {
             padding: 4px 0;
             width: 108px;
             font-size: 0.75rem;
-            color: #FFF;
+            color: $text;
             line-height: normal;
             letter-spacing: 0.6px;
             text-transform: uppercase;
@@ -1744,7 +1744,7 @@ input[type=search] {
             font-weight: 700;
             font-size: 1.25rem;
             line-height: normal;
-            color: #000;
+            color: $text;
         }
     }
 }
@@ -1772,7 +1772,7 @@ input[type=search] {
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             font-size: 0.7rem;
-            color: #FFF;
+            color: $text;
             line-height: normal;
             letter-spacing: 0.6px;
             text-transform: uppercase;
@@ -1782,7 +1782,7 @@ input[type=search] {
                 font-weight: 700;
                 font-size: 1.25rem;
                 line-height: normal;
-                color: #000;
+                color: $text;
             }
         }
     }
@@ -1813,7 +1813,7 @@ input[type=search] {
             font-weight: 700;
             font-size: 1.25rem;
             line-height: normal;
-            color: #000;
+            color: $text;
         }
     }
 }
