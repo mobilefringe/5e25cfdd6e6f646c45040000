@@ -125,11 +125,11 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                             /*{
                                 name: "Center Information",
                                 href: "/center-information"
-                            },*/
+                            },
                             {
                                 name: "Services",
                                 href: "/pages/costamesa-services"
-                            },
+                            },*/
                             {
                                 name: "Contact Us",
                                 href: "/contact-us"
