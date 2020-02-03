@@ -552,7 +552,7 @@ a {
             text-align: center;
             .banner_heading {
                 padding: 10px 20px;
-                border: 1px solid #FFF;
+                border: 1px solid $text;
                 background: $primary;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.083rem;
