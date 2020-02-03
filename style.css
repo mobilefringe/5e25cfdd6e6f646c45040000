@@ -589,7 +589,7 @@ a {
                 background: $primary;
                 font-size: 0.9rem;
                 font-weight: 700;
-                color: #FFF;    
+                color: $text;    
                 text-transform: uppercase;
                 transition: all 0.3s ease;
                 &:before {
