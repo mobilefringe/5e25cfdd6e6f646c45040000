@@ -387,7 +387,7 @@ a {
 /* *** FOOTER *** */
 #footer {
     background-color: #555;
-    color: $text;
+    color: #fff;
     .newsletter_signup {
         padding: 28px 0 32px 0;
         background-color: $primary;
