@@ -558,7 +558,7 @@ a {
                 font-size: 1.083rem;
                 line-height: normal;
                 letter-spacing: 0.15rem;
-                color: #FFF;
+                color: $text;
                 text-transform: uppercase;
             }
             .banner_title {
