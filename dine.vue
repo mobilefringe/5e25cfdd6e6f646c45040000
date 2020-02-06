@@ -199,9 +199,10 @@
                 dropDownCats() {
                     var vm = this;
                     var dining_cat =  _.find(this.processedCategories, function(o) { return o.name == "Dining"});
+                    dining_cat = this.dineFilter;
                     var subcategories = [];
                     if (dining_cat !== null && dining_cat !== undefined) {
-                       subcategories = vm.findSubcategoriesByParentID(dining_cat.id);
+                       subcategories = vm.findSubcategoriesByParentID(dining_cat);
                     }
                     
                     subcategories = _.map(subcategories, 'name').sort();
