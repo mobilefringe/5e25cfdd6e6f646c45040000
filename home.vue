@@ -69,8 +69,8 @@
                     	    </div>
                         </div>
                     </div>
-                    <h2 class="home_title center">In Our Feed</h2>
-                    <div class="row hidden-xs margin_60">
+                    <h2 v-if="instaFeed.length > 0" class="home_title center">In Our Feed</h2>
+                    <div class="row hidden-xs margin_60" v-if="instaFeed.length > 0">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="insta-feed-container">
                                 <div class="insta-feed-image " v-for="(item, index) in instaFeed">
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="visible-xs margin_60 insta-feed-container">
+                    <div class="visible-xs margin_60 insta-feed-container" v-if="instaFeed.length > 0">
                         <div class="insta_prev"></div>
                         <slick ref="slick" :options="instaOptions">
                             <div class="insta-feed-image " v-for="(item, index) in instaFeed">
