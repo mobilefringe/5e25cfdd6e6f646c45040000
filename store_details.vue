@@ -256,42 +256,22 @@
                     })
                     return this.processedStores;
                 },
-                // getSVGMap () {
-                //     var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
-                //     return mapURL
-                // },
-                svgMapRef() {
-                    return this.$refs.svgmap_ref;
-                },
-                // floorList () {
-                //     var floor_list = [];
-                //     var floor_1 = {};
-                //     floor_1.id = "first-floor";
-                //     floor_1.title = "Level One";
-                //     // floor_1.map = this.getSVGMap
-                //     floor_1.map = this.floorOne;
-                //     floor_1.z_index = 1;
-                //     floor_1.show = true;
-                //     floor_list.push(floor_1);
-                //     return floor_list;
-                // }
                 floorList () {
                     var floor_list = [];
-                    // Get SVG Maps from Repo
-                    var floor_maps_repo = this.findRepoByName('SVG Map');
-                    if(floor_maps_repo !== null && floor_maps_repo !== undefined && floor_maps_repo.images.length > 0){
-                        floor_maps = floor_maps_repo.images;
-                        if (this.currentStore.z_coordinate == 1) {
-                            var floor_1 = {};
-                            floor_1.id = "first-floor";
-                            floor_1.title = "Level 1";
-                            floor_1.map = _.find(floor_maps, function(o){ return _.toNumber(o.id) == _.toNumber(42816);}).image_url;
-                            floor_1.z_index = 1;
-                            floor_1.show = true;
-                            floor_list.push(floor_1);
-                        }
-                    }
+                    var floor_1 = {};
+                    floor_1.id = "first-floor";
+                    floor_1.title = "Level One";
+                    floor_1.map = this.getPNGurl;
+                    floor_1.z_index = 1;
+                    floor_1.show = true;
+                    floor_list.push(floor_1);
                     return floor_list;
+                },
+                getPNGurl () {
+                    return "https://www.mallmaverick.com" + this.property.map_url;
+                },
+                pngMapRef() {
+                    return this.$refs.pngmapref;
                 }
             },
             methods: {
@@ -309,13 +289,12 @@
                     }
                     this.$breadcrumbs[1].meta.breadcrumb = this.currentStore.name
                 },
-                updateSVGMap(map) {
+                updatePNGMap(map) {
                     this.map = map;
-                    this.svgMapRef.showLocation(this.currentStore.svgmap_region);
-                    this.svgMapRef.addActiveClass(this.currentStore.svgmap_region);
+                    this.dropPin(this.currentStore);
                 },
                 dropPin(store) {
-                    this.svgMapRef.showLocation(store.svgmap_region);
+                    this.$refs.pngmap_ref.showLocation(store.id);
                 },
                 isMultiDay(item) {
                     var timezone = this.timezone
