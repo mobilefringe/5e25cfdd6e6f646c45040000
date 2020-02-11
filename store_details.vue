@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-md-8">
                             <div id="map" class="margin_20">
-                                <mapplic-map ref="svgmap_ref" :height="300" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="1500" :svgHeight="1500" @updateMap="updateSVGMap" :key="currentStore.id"></mapplic-map>
+                                <mapplic-png-map ref="pngmap_ref" :height="314" :hovertip="true" :storelist="allStores" :floorlist="floorList" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" @updateMap="updatePNGMap" id="store_details_map"></mapplic-png-map>
                                 
                             </div>
                             <div class=" margin_30 store_details_desc" v-html="currentStore.rich_description"></div>
@@ -139,7 +139,7 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "moment", "vue!mapplic-map", "json!site.json"], function (Vue, Vuex, moment, MapplicComponent, siteInfo) {
+    define(["Vue", "vuex", "moment", "vue!mapplic-png-map", "json!site.json"], function (Vue, Vuex, moment, MapplicComponent, siteInfo) {
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
             props: ['id'],
