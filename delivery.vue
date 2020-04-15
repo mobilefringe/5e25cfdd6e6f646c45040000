@@ -179,7 +179,7 @@
                             
                    
                             // Check if Delivery 
-                            if (_.includes(value.categories, 9376)){
+                            if (_.includes(value.categories, 9382)){
                               value.delivery_store = true
                             } else {
                               value.delivery_store = false
