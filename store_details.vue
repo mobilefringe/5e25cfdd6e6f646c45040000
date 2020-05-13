@@ -227,7 +227,7 @@
                         if (_.includes(subcategories, 9383)) {
                             this.hasUberEats = true;
                         }
-                        if (_.includes(subcategories, 9374)) {
+                        if (_.includes(subcategories, 9427)) {
                                 this.hasDrizly = true;   
                             }
                         if (_.includes(subcategories, 9384)) {
