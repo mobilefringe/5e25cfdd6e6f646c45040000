@@ -198,6 +198,7 @@
                     });
                     
                     this.meta = this.findMetaDataByPath(this.$route.path);
+                    this.$emit('updateHead')
                     this.dataLoaded = true;  
                 });
             },
