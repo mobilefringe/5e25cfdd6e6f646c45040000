@@ -40,6 +40,7 @@
         </script>
     </head>
     <body>
+        {%raw-%} 
         <div id="app" v-cloak>
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
             <div v-if="dataLoaded">
@@ -50,6 +51,7 @@
                 </transition-group>
             </div>
         </div>
+        {%endraw-%}
         <script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
         <script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
         <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
