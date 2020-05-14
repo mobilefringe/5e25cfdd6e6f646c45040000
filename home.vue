@@ -111,6 +111,24 @@
     define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "moment", "moment-timezone", "vue-moment", "vue!welcome_msg", "json!site.json"], function (Vue, Vuex, meta, slick, moment, tz, VueMoment, welcomeMessage, siteInfo) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
+            head: {
+                // To use "this" in the component, it is necessary to return the object through a function
+                title: function () {
+                  return {
+                    inner: this.meta.meta_title,
+                    separator: ' ', // Leave empty separator
+                    complement: ' ' // Leave empty complement
+                  }
+                },
+                meta: function () {
+                  return [
+                     { name: 'description', id: 'description', content: this.meta.meta_description },
+                     { name: 'keywords',  id: 'keywords', content: this.meta.meta_keywords },
+                     { property: 'og:title', id: 'og:title', content: this.meta.meta_title },
+                     { property: 'og:description', id: 'og:description', content: this.meta.meta_description }
+                  ]
+                }
+            },
             data: function() {
                 return {
                     dataLoaded: false,
